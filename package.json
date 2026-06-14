@@ -1,0 +1,21 @@
+{
+  "name": "mordangrapher-theme",
+  "displayName": "MordanGrapher-Theme",
+  "description": "Darkest personal Theme by MordanGrapher",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.120.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "MordanGrapher-Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/MordanGrapher-Theme-color-theme.json"
+      }
+    ]
+  }
+}
