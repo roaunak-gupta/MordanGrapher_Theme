@@ -2,18 +2,106 @@
 	"name": "MordanGrapher-Theme",
 	"type": "dark",
 	"tokenColors": [
+		// Our Custom Theme colors
 		{
-			"name": "Global settings",
+			"name": "Storage",
+			"scope": "storage.type, storage.modifier, storage.control",
 			"settings": {
-				"background": "#0A0A0A",
-				"foreground": "#D9D9D9"
+				"foreground": "#ff569a",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Function definition",
+			"scope": "meta.function entity.name.function",
+			"settings": {
+				"foreground": "#00e1ff",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Function call",
+			"scope": "entity.name.function, support.function",
+			"settings": {
+				"foreground": "#00e1ff",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Function Call",
+			"scope": "source.python meta.function-call.python, meta.function-call.arguments",
+			"settings": {
+				"foreground": "#12e77d"
 			}
 		},
 		{
 			"name": "String",
 			"scope": "string",
 			"settings": {
-				"foreground": "#a3c679"
+				"foreground": "#ffffff"
+			}
+		},
+		{
+			"name": "Member Access Meta",
+			"scope": "source.python meta.member.access.python",
+			"settings": {
+				"foreground": "#ffffff"
+			}
+		},
+		{
+			"name": "Function Call",
+			"scope": "entity.name.function.call, support.function.builtin",
+			"settings": {
+				"foreground": "#ff7300",
+				"fontStyle": "italic bold"
+			}
+		},
+		{
+			"name": "Keyword Control",
+			"scope": [
+				"keyword.control"
+			],
+			"settings": {
+				"foreground": "#ff4365",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Class",
+			"scope": "entity.name, entity.name.type.class, support.type, support.class, meta.use",
+			"settings": {
+				"foreground": "#e2d16d"
+			}
+		},
+		{
+			"name": "Keyword",
+			"scope": "keyword, modifier, variable.language.this, support.type.object, constant.language",
+			"settings": {
+				"foreground": "#00eaff"
+			}
+		},
+		{
+			"name": "Variable",
+			"scope": "variable, variable.parameter, support.variable, variable.language, support.constant, meta.definition.variable entity.name.function, meta.function-call.arguments",
+			"settings": {
+				"foreground": "#a5c3ff"
+			}
+		},
+		{
+			"name": "Python - Self Parameter",
+			"scope": [
+				"variable.parameter.function.language.special.self.python"
+			],
+			"settings": {
+				"foreground": "#a5d8ff",
+				"fontStyle": "italic"
+			}
+		},
+		// -------------------------------------End of Our Custom Theme-----------------------------------------
+		{
+			"name": "Global settings",
+			"settings": {
+				"foreground": "#D9D9D9"
 			}
 		},
 		{
@@ -45,38 +133,10 @@
 			}
 		},
 		{
-			"name": "Variable",
-			"scope": "variable, variable.parameter, support.variable, variable.language, support.constant, meta.definition.variable entity.name.function, meta.function-call.arguments",
-			"settings": {
-				"foreground": "#D9D9D9"
-			}
-		},
-		{
 			"name": "Other Keyword",
 			"scope": "keyword.other",
 			"settings": {
 				"foreground": "#cd775c"
-			}
-		},
-		{
-			"name": "Keyword",
-			"scope": "keyword, modifier, variable.language.this, support.type.object, constant.language",
-			"settings": {
-				"foreground": "#6ebad7"
-			}
-		},
-		{
-			"name": "Function call",
-			"scope": "entity.name.function, support.function",
-			"settings": {
-				"foreground": "#6a90d0"
-			}
-		},
-		{
-			"name": "Storage",
-			"scope": "storage.type, storage.modifier, storage.control",
-			"settings": {
-				"foreground": "#a178c4"
 			}
 		},
 		{
@@ -125,31 +185,17 @@
 			}
 		},
 		{
-			"name": "Class",
-			"scope": "entity.name, entity.name.type.class, support.type, support.class, meta.use",
-			"settings": {
-				"foreground": "#d5b05f"
-			}
-		},
-		{
 			"name": "Class variable",
 			"scope": "variable.object.property, meta.field.declaration entity.name.function",
 			"settings": {
-				"foreground": "#c85e60"
+				"foreground": "#e9d758"
 			}
 		},
 		{
 			"name": "Class method",
 			"scope": "meta.definition.method entity.name.function",
 			"settings": {
-				"foreground": "#c85e60"
-			}
-		},
-		{
-			"name": "Function definition",
-			"scope": "meta.function entity.name.function",
-			"settings": {
-				"foreground": "#6a90d0"
+				"foreground": "#e9d758"
 			}
 		},
 		{
@@ -170,14 +216,14 @@
 			"name": "YAML key",
 			"scope": "entity.name.tag.yaml",
 			"settings": {
-				"foreground": "#c85e60"
+				"foreground": "#e9d758"
 			}
 		},
 		{
 			"name": "JSON key",
 			"scope": "meta.object-literal.key, meta.object-literal.key string, support.type.property-name.json",
 			"settings": {
-				"foreground": "#c85e60"
+				"foreground": "#e9d758"
 			}
 		},
 		{
@@ -212,7 +258,7 @@
 			"name": "JSON Key - Level 3",
 			"scope": "meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
 			"settings": {
-				"foreground": "#c85e60"
+				"foreground": "#e9d758"
 			}
 		},
 		{
@@ -289,7 +335,7 @@
 			"name": "HTML tag inner",
 			"scope": "entity.name.tag",
 			"settings": {
-				"foreground": "#c85e60"
+				"foreground": "#e9d758"
 			}
 		},
 		{
@@ -317,7 +363,7 @@
 			"name": "Markdown link text",
 			"scope": "text.html.markdown meta.link.inline, meta.link.reference",
 			"settings": {
-				"foreground": "#c85e60"
+				"foreground": "#e9d758"
 			}
 		},
 		{
@@ -331,7 +377,7 @@
 			"name": "Markdown italic",
 			"scope": "markup.italic",
 			"settings": {
-				"foreground": "#c85e60",
+				"foreground": "#e9d758",
 				"fontStyle": "italic"
 			}
 		},
@@ -339,7 +385,7 @@
 			"name": "Markdown bold",
 			"scope": "markup.bold",
 			"settings": {
-				"foreground": "#c85e60",
+				"foreground": "#e9d758",
 				"fontStyle": "bold"
 			}
 		},
@@ -347,7 +393,7 @@
 			"name": "Markdown bold italic",
 			"scope": "markup.bold markup.italic, markup.italic markup.bold",
 			"settings": {
-				"foreground": "#c85e60",
+				"foreground": "#e9d758",
 				"fontStyle": "italic bold"
 			}
 		},
@@ -384,7 +430,7 @@
 			"name": "INI property name",
 			"scope": "keyword.other.definition.ini",
 			"settings": {
-				"foreground": "#c85e60"
+				"foreground": "#e9d758"
 			}
 		},
 		{
@@ -405,7 +451,7 @@
 			"name": "C# class method",
 			"scope": "source.cs meta.method.identifier entity.name.function",
 			"settings": {
-				"foreground": "#c85e60"
+				"foreground": "#e9d758"
 			}
 		},
 		{
@@ -465,31 +511,10 @@
 			}
 		},
 		{
-			"name": "Member Access Meta",
-			"scope": "source.python meta.member.access.python",
-			"settings": {
-				"foreground": "#c85e60"
-			}
-		},
-		{
-			"name": "Function Call",
-			"scope": "source.python meta.function-call.python, meta.function-call.arguments",
-			"settings": {
-				"foreground": "#6a90d0"
-			}
-		},
-		{
 			"name": "Blocks",
 			"scope": "meta.block",
 			"settings": {
 				"foreground": "#c85e60"
-			}
-		},
-		{
-			"name": "Function Call",
-			"scope": "entity.name.function.call, support.function.builtin",
-			"settings": {
-				"foreground": "#6a90d0"
 			}
 		},
 		{
@@ -551,31 +576,11 @@
 			}
 		},
 		{
-			"name": "Keyword Control",
-			"scope": [
-				"keyword.control"
-			],
-			"settings": {
-				"foreground": "#6ebad7",
-				"fontStyle": "italic"
-			}
-		},
-		{
 			"name": "Parameter",
 			"scope": [
 				"variable.parameter"
 			],
 			"settings": {
-				"fontStyle": "italic"
-			}
-		},
-		{
-			"name": "Python - Self Parameter",
-			"scope": [
-				"variable.parameter.function.language.special.self.python"
-			],
-			"settings": {
-				"foreground": "#D9D9D9",
 				"fontStyle": "italic"
 			}
 		},
